@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+		<title>HTML5+ 扫描二维码</title>
+		<link href="../css/mui.min.css" rel="stylesheet" />
+	</head>
+
+	<body>
+		<header class="mui-bar mui-bar-nav">
+			<a class="mui-action-back mui-icon mui-icon-left-nav mui-pull-left"></a>
+			<h1 class="mui-title">二维码扫描</h1>
+		</header>
+		<div class="mui-content">
+			<form class="mui-input-group">
+				<div class="mui-button-row">
+					<button type="button" class="mui-btn mui-btn-success"id="scan">扫一扫</button>
+					<button type="button" class="mui-btn mui-btn-warning"id="scan2">从相册选择</button>
+				</div>
+				<div class="mui-button-row">
+					<button type="button" class="mui-btn mui-btn-dafault" onclick="pluginShow()">访问SDK</button>
+					<button type="button" class="mui-btn mui-btn-success"onclick="pluginShowArrayArgu()">显示参数</button>
+				</div>
+				<div class="mui-button-row">
+					<button type="button" class="mui-btn mui-btn-success"onclick="pluginGetString()">同步访问</button>
+					<button type="button" class="mui-btn mui-btn-dafault" onclick="pluginGetStringArrayArgu()">获取参数</button>
+				</div>
+				<div class="mui-input-row">
+					<label for="">扫描结果</label>
+					<input type="text" name="result" id="result"/>
+				</div>
+			</form>
+		</div>
+		<div style="width:100%; height:100%; margin: auto; top:0; left: 0; position: fixed; display: none; z-index: 10;" id="scanContainer">
+			<span>返回</span>
+		</div>
+		<script src="../js/mui.min.js"></script>
+		<script src="../js/scaner.js"></script>
+		<script type="text/javascript" charset="UTF-8">
+		document.addEventListener('plusready',function(){
+			plus.key.addEventListener('backbutton',function(){
+					plus.runtime.quit();
+			},false);
+		},false);
+
+  		function pluginShow() {
+  			//mui.toast('执行到了');
+            plus.Scaner.PluginTestFunction("Hello World",
+             function( result ) {
+             	mui.alert( result );
+             },
+             function(result){
+             	alert(result)
+             });
+        }
+        function pluginShowArrayArgu() {
+            plus.Scaner.PluginTestFunctionArrayArgu( ["江苏","常州","武进"],
+            function( result ) {
+            	mui.alert( result );
+            },
+            function(result){
+           		mui.alert(result);
+            });
+        }
+        function pluginGetString()
+        {
+            mui.alert(plus.Scaner.PluginTestFunctionSync("中国","江苏","常州","武进"));
+        }
+        function pluginGetStringArrayArgu()
+        {
+            var Argus = plus.Scaner.PluginTestFunctionSyncArrayArgu(["中国","江苏","常州","武进!"]);
+            alert( Argus.RetArgu1 + "_" +  Argus.RetArgu2 + "_" + Argus.RetArgu3  + "_" + Argus.RetArgu4 );
+        }
+			mui.init({
+				swipeBack: true
+			});
+			mui.plusReady(function() {
+				document.addEventListener('keydown',function(e){
+
+				});
+				mui("#scan")[0].addEventListener('tap', function() {
+					// 扫描二维码
+					document.getElementById("scanContainer").style.display = "block";
+					var barScan = new plus.barcode.Barcode("scanContainer");
+					//barScan.start(); 开始扫描
+					barScan.start({
+						conserve: true,
+						filename: "_doc/barcode/"
+					}); // 可以配置扫描后保存的路径
+					//条码扫描成功事件
+					barScan.onmarked = function(type, code, file) {
+						switch(type){
+					    	case plus.barcode.QR:
+					    	type = 'QR';
+					    	break;
+					    	case plus.barcode.EAN13:
+					    	type = 'EAN13';
+					    	break;
+					    	case plus.barcode.EAN8:
+					    	type = 'EAN8';
+					    	break;
+					    	default:
+					    	type = '其它'+type;
+					    	break;
+					    }
+						var result = "type:" + type + ",code:" + code;
+						mui('#result')[0].value=result;
+						//关闭
+						barScan.close();
+						document.getElementById("scanContainer").style.display = "none";
+					};
+					barScan.onerror = function() {
+						mui.toast("扫描失败");
+					}
+				});
+				// 识别本地的二维码
+				mui("#scan2")[0].addEventListener('tap', function() {
+					plus.gallery.pick(function(path) {
+						plus.barcode.scan(path, function(type, code, file) {
+							switch(type){
+						    	case plus.barcode.QR:
+						    	type = 'QR';
+						    	break;
+						    	case plus.barcode.EAN13:
+						    	type = 'EAN13';
+						    	break;
+						    	case plus.barcode.EAN8:
+						    	type = 'EAN8';
+						    	break;
+						    	default:
+						    	type = '其它'+type;
+						    	break;
+						    }
+							var result = "type:" + type + ",code:" + code;
+							mui('#result')[0].value=result;
+						}, function(error) {
+							mui.alert('无法识别图片');
+						});
+					}, function(err) {
+						mui.alert('取消扫描');
+					});
+				});
+			});
+		</script>
+	</body>
+
+</html>

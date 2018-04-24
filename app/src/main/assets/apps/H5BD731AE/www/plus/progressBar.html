@@ -1,0 +1,44 @@
+<!doctype html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+		<link href="../css/mui.min.css" rel="stylesheet" />
+	</head>
+
+	<body>
+		<script src="../js/mui.min.js"></script>
+		<script type="text/javascript">
+			mui.init()
+		</script>
+		<header class="mui-bar mui-bar-nav">
+			<a class="mui-action-back mui-icon mui-icon-left-nav mui-pull-left"></a>
+			<h1 class="mui-title">进度条、滑块及开关</h1>
+		</header>
+		<div class="mui-content" style="margin-top: 20px;">
+			<div id="demo1" class="mui-progressbar">
+			    <span></span>
+			</div>
+			<div class="mui-input-row mui-input-range" style="margin-top: 50px;">
+				<label for="">Range</label>
+				<input type="range" name="" id="" min="0" max="100"/>
+			</div>
+			<div class="mui-switch" style="margin-top: 30px"; id="mySwitch">
+				<div class="mui-switch-handle"></div>
+			</div>
+		</div>
+	</body>
+
+</html>
+<script type="text/javascript">
+	mui('#demo1').progressbar({progress:20}).show();
+	document.getElementById("mySwitch").addEventListener("toggle",function(event){
+	    if(event.detail.isActive){
+	        mui.toast("你启动了开关");
+		}else{
+		    mui.toast("你关闭了开关");  
+		}
+	});
+</script>

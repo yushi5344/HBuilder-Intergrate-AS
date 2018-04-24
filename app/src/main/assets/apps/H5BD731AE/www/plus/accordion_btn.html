@@ -1,0 +1,74 @@
+<!doctype html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+		<link href="../css/mui.min.css" rel="stylesheet" />
+	</head>
+
+	<body>
+		<script src="../js/mui.min.js"></script>
+		<script type="text/javascript">
+			mui.init()
+		</script>
+		<header class="mui-bar mui-bar-nav">
+			<a class="mui-action-back mui-icon mui-icon-left-nav mui-pull-left"></a>
+			<h1 class="mui-title">折叠面板和按钮</h1>
+		</header>
+		<div class="mui-content">
+			<div class="mui-card">
+				<ul class="mui-table-view">
+					<li class="mui-table-view-cell mui-collapse">
+						<a class="mui-navigate-right">季节</a>
+						<div class="mui-collapse-content">
+							<p>春</p>
+						</div>
+						<div class="mui-collapse-content">
+							<p>夏</p>
+						</div>
+						<div class="mui-collapse-content">
+							<p>秋</p>
+						</div>
+						<div class="mui-collapse-content">
+							<p>冬</p>
+						</div>
+					</li>
+					<li class="mui-table-view-cell mui-collapse mui-active">
+						<a class="mui-navigate-right">节日</a>
+						<div class="mui-collapse-content">
+							<p>春分</p>
+						</div>
+						<div class="mui-collapse-content">
+							<p>清明</p>
+						</div>
+						<div class="mui-collapse-content">
+							<p>秋分</p>
+						</div>
+						<div class="mui-collapse-content">
+							<p>冬至</p>
+						</div>
+					</li>
+				</ul>
+			</div>
+			<div>
+				<button type="button" class="mui-btn">默认</button>
+				<button type="button" class="mui-btn mui-btn-primary">蓝色</button>
+				<button type="button" class="mui-btn mui-btn-success">绿色</button>
+				<button type="button" class="mui-btn mui-btn-warning">黄色</button>
+				<button type="button" class="mui-btn mui-btn-danger">红色</button>
+				<button type="button" class="mui-btn mui-btn-royal">紫色</button>
+			</div>
+			<div style="margin-top: 20px;">
+				<button type="button" class="mui-btn mui-btn-outlined">默认</button>
+				<button type="button" class="mui-btn mui-btn-primary mui-btn-outlined">蓝色</button>
+				<button type="button" class="mui-btn mui-btn-success mui-btn-outlined">绿色</button>
+				<button type="button" class="mui-btn mui-btn-warning mui-btn-outlined">黄色</button>
+				<button type="button" class="mui-btn mui-btn-danger mui-btn-outlined">红色</button>
+				<button type="button" class="mui-btn mui-btn-royal mui-btn-outlined">紫色</button>
+			</div>
+		</div>
+	</body>
+
+</html>

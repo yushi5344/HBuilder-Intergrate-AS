@@ -1,0 +1,38 @@
+<!doctype html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+		<link href="../css/mui.min.css" rel="stylesheet" />
+	</head>
+
+	<body>
+		<script src="../js/mui.min.js"></script>
+		<script type="text/javascript">
+			mui.init()
+		</script>
+		<header class="mui-bar mui-bar-nav">
+		    <a class="mui-action-back mui-icon mui-icon-left-nav mui-pull-left"></a>
+		    <h1 class="mui-title">窗口管理及数据传递</h1>
+		</header>
+		<div class="mui-content">
+		    <ul class="mui-table-view">
+		    	<li class="mui-table-view-cell"><a href="subpages.html">加载子页面</a></li>
+		    	<li class="mui-table-view-cell"><a href="openNewPage.html">打开新页面</a></li>
+		    	<li class="mui-table-view-cell" onclick="transData();"><a >数据传递</a></li>
+		    </ul>
+		</div>
+	</body>
+
+</html>
+<script type="text/javascript">
+	function transData(){
+		mui.openWindow({
+			url    : 'transData.html',
+			id     : 'transData.html',
+			extras : {'name':'小明','age':18}
+		});
+	}
+</script>

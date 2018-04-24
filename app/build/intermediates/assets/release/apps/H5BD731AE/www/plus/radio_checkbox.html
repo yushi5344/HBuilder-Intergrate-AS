@@ -1,0 +1,88 @@
+<!doctype html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+		<link href="../css/mui.min.css" rel="stylesheet" />
+	</head>
+
+	<body>
+		<script src="../js/mui.min.js"></script>
+		<script type="text/javascript">
+			mui.init()
+		</script>
+		<header class="mui-bar mui-bar-nav">
+			<a class="mui-action-back mui-icon mui-icon-left-nav mui-pull-left"></a>
+			<h1 class="mui-title">获取单选框和复选框的值</h1>
+		</header>
+		<div class="mui-content">
+			<div class="mui-input-row mui-checkbox">
+				<label for="">英语</label>
+				<input type="checkbox" value="English" name="language" />
+			</div>
+			<div class="mui-input-row mui-checkbox">
+				<label for="">法语</label>
+				<input type="checkbox" value="Franch" name="language" />
+			</div>
+			<div class="mui-input-row mui-checkbox mui-left">
+				<label for="">日语</label>
+				<input type="checkbox" value="Japanese" name="language" />
+			</div>
+			<button id="button" onclick="getCheckBoxValue()">获取复选框的值</button>
+			<div class="mui-input-row mui-radio">
+				<label for="">星期一</label>
+				<input type="radio" name="weeks" value="Mon"/>
+			</div>
+			<div class="mui-input-row mui-radio">
+				<label for="">星期二</label>
+				<input type="radio" name="weeks" value="Tue"/>
+			</div>
+			<div class="mui-input-row mui-radio">
+				<label for="">星期日</label>
+				<input type="radio" name="weeks" value="Sun"/>
+			</div>
+			<button class="mui-btn mui-btn-success" onclick="getRadioValue()" >获取单选框的值</button>
+			<div style="margin-top: 20px;">
+				<ul class="mui-table-view mui-table-view-radio">
+					<li class="mui-table-view-cell">
+						<a class="mui-navigate-right">1</a>
+					</li>
+					<li class="mui-table-view-cell">
+						<a class="mui-navigate-right">2</a>
+					</li>
+					<li class="mui-table-view-cell">
+						<a class="mui-navigate-right">3</a>
+					</li>
+				</ul>
+			</div>
+		</div>
+	</body>
+	<script type="text/javascript">
+		var list=document.querySelector('.mui-table-view-radio');
+		list.addEventListener('selected',function(e){
+			mui.toast("当前选中的为"+e.detail.el.innerText);
+		});
+		function getCheckBoxValue(){
+			var ck=document.getElementsByName('language')
+			var checkVal=[];
+			for(i=0;i<ck.length;i++){
+				if(ck[i].checked){
+					checkVal.push(ck[i].value);
+				}
+			}
+			mui.toast(checkVal);
+		}
+		function getRadioValue(){
+			var radio=document.getElementsByName('weeks');
+			var checkVal=null;
+			for(i=0;i<radio.length;i++){
+				if(radio[i].checked){
+					checkVal=radio[i].value;
+				}
+			}
+			mui.toast(checkVal);
+		}
+	</script>
+</html>

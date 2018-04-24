@@ -1,0 +1,66 @@
+<!doctype html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+		<link href="../css/mui.min.css" rel="stylesheet" />
+	</head>
+
+	<body>
+		<script src="../js/mui.min.js"></script>
+		<script type="text/javascript">
+			mui.init()
+		</script>
+		<header class="mui-bar mui-bar-nav">
+			<a class="mui-action-back mui-icon mui-icon-left-nav mui-pull-left"></a>
+			<h1 class="mui-title">操作表和数字角标</h1>
+		</header>
+		<div class="mui-content">
+			<div style="padding:20px;">
+	        	<input type="button" class="mui-btn-blue" value="上传图片" onclick="showPop();" />
+	        </div>
+	        
+	        <div style="margin-top: 20px;">
+	        	<span class="mui-badge">1</span>
+	        	<span class="mui-badge mui-badge-primary">2</span>
+	        	<span class="mui-badge mui-badge-success">3</span>
+	        	<span class="mui-badge mui-badge-warning">4</span>
+	        	<span class="mui-badge mui-badge-danger">5</span>
+	        	<span class="mui-badge mui-badge-royal">6</span>
+	        </div>
+	        <div style="margin-top: 20px;">
+	        	<span class="mui-badge mui-badge-inverted">1</span>
+	        	<span class="mui-badge mui-badge-primary mui-badge-inverted">2</span>
+	        	<span class="mui-badge mui-badge-success mui-badge-inverted">3</span>
+	        	<span class="mui-badge mui-badge-warning mui-badge-inverted">4</span>
+	        	<span class="mui-badge mui-badge-danger mui-badge-inverted">5</span>
+	        	<span class="mui-badge mui-badge-royal mui-badge-inverted">6</span>
+	        </div>
+		</div>
+		<div id="sheet1" class="mui-popover mui-popover-bottom mui-popover-action ">
+		    <!-- 可选择菜单 -->
+		    <ul class="mui-table-view">
+		      <li class="mui-table-view-cell">
+		        <a href="#">拍照</a>
+		      </li>
+		      <li class="mui-table-view-cell">
+		        <a href="#">從文件夾中選擇</a>
+		      </li>
+		    </ul>
+		    <!-- 取消菜单 -->
+		    <ul class="mui-table-view">
+		      <li class="mui-table-view-cell">
+		        <a href="#sheet1"><b>取消</b></a>
+		      </li>
+		    </ul>
+		</div>
+	</body>
+
+</html>
+<script type="text/javascript">
+	function showPop(){
+		mui('#sheet1').popover('toggle');
+	}
+</script>

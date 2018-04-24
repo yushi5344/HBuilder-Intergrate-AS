@@ -1,0 +1,62 @@
+<!doctype html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+		<link href="../css/mui.min.css" rel="stylesheet" />
+	</head>
+
+	<body>
+		<script src="../js/mui.min.js"></script>
+		<script type="text/javascript">
+			mui.init()
+		</script>
+		<header class="mui-bar mui-bar-nav">
+		    <a class="mui-action-back mui-icon mui-icon-left-nav mui-pull-left"></a>
+		    <h1 class="mui-title">事件绑定及自定义事件</h1>
+		</header>
+		<div class="mui-content">
+		    <button class="mui-btn mui-btn-danger"id="button" >绑定单个事件</button>
+		    <div style="margin-top: 20px;">
+		    	<ul class="mui-table-view" id="mui-tab">
+		    		<li class="mui-table-view-cell">小明</li>
+		    		<li class="mui-table-view-cell">小花</li>
+		    		<li class="mui-table-view-cell">小萌</li>
+		    	</ul>
+		    </div>
+		    <button class="mui-btn mui-btn-success" id='btn'>自动点击</button>
+		    <div style="margin-top: 20px;">
+		    	<ul class="mui-table-view" id="mui-tab-view">
+		    		<li class="mui-table-view-cell">新闻1</li>
+		    		<li class="mui-table-view-cell">新闻2</li>
+		    		<li class="mui-table-view-cell">新闻3</li>
+		    	</ul>
+		    </div>
+		</div>
+	</body>
+
+</html>
+<script type="text/javascript">
+	document.getElementById('button').addEventListener('tap',function(){
+		mui.toast('监听到这个事件了');
+	});
+	mui.plusReady(function(){
+		mui('#mui-tab').on('tap','li',function(){
+			var html=this.innerHTML;
+			mui.toast(html);
+		});
+		//mui('.mui-table-view').off('tap','li');//事件取消
+		var preloadpage=mui.preload({url:'news.html',id:'news.html'});
+		mui('#mui-tab-view').on('tap','li',function(){
+			mui.fire(preloadpage,'newspage',{html:this.innerHTML});
+			mui.openWindow({id:'news.html'});
+		});
+	});
+	var btn=document.getElementById('btn');
+	btn.addEventListener('tap',function(){
+		mui.toast('自动点击');
+	});
+	mui.trigger(btn,'tap');
+</script>

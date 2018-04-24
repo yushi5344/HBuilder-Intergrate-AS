@@ -1,0 +1,94 @@
+[
+    {
+        "merged": "G:\\Android\\HBuilder-Integrate-AS\\app\\build\\intermediates\\res\\merged\\debug\\layout\\dcloud_custom_notification_mi.xml",
+        "source": "C:\\Users\\yushi\\.android\\build-cache\\9a7f693611312ad9096012c8a79ac4f58395e580\\output\\res\\layout\\dcloud_custom_notification_mi.xml"
+    },
+    {
+        "merged": "G:\\Android\\HBuilder-Integrate-AS\\app\\build\\intermediates\\res\\merged\\debug\\layout\\dcloud_record_default.xml",
+        "source": "C:\\Users\\yushi\\.android\\build-cache\\9a7f693611312ad9096012c8a79ac4f58395e580\\output\\res\\layout\\dcloud_record_default.xml"
+    },
+    {
+        "merged": "G:\\Android\\HBuilder-Integrate-AS\\app\\build\\intermediates\\res\\merged\\debug\\layout\\dcloud_custom_notification_white.xml",
+        "source": "C:\\Users\\yushi\\.android\\build-cache\\9a7f693611312ad9096012c8a79ac4f58395e580\\output\\res\\layout\\dcloud_custom_notification_white.xml"
+    },
+    {
+        "merged": "G:\\Android\\HBuilder-Integrate-AS\\app\\build\\intermediates\\res\\merged\\debug\\layout\\dcloud_dialog.xml",
+        "source": "C:\\Users\\yushi\\.android\\build-cache\\9a7f693611312ad9096012c8a79ac4f58395e580\\output\\res\\layout\\dcloud_dialog.xml"
+    },
+    {
+        "merged": "G:\\Android\\HBuilder-Integrate-AS\\app\\build\\intermediates\\res\\merged\\debug\\layout\\dcloud_custom_notification.xml",
+        "source": "C:\\Users\\yushi\\.android\\build-cache\\9a7f693611312ad9096012c8a79ac4f58395e580\\output\\res\\layout\\dcloud_custom_notification.xml"
+    },
+    {
+        "merged": "G:\\Android\\HBuilder-Integrate-AS\\app\\build\\intermediates\\res\\merged\\debug\\layout\\dcloud_custom_notification_dark.xml",
+        "source": "C:\\Users\\yushi\\.android\\build-cache\\9a7f693611312ad9096012c8a79ac4f58395e580\\output\\res\\layout\\dcloud_custom_notification_dark.xml"
+    },
+    {
+        "merged": "G:\\Android\\HBuilder-Integrate-AS\\app\\build\\intermediates\\res\\merged\\debug\\layout\\dcloud_snow_black_progress.xml",
+        "source": "C:\\Users\\yushi\\.android\\build-cache\\9a7f693611312ad9096012c8a79ac4f58395e580\\output\\res\\layout\\dcloud_snow_black_progress.xml"
+    },
+    {
+        "merged": "G:\\Android\\HBuilder-Integrate-AS\\app\\build\\intermediates\\res\\merged\\debug\\layout\\dcloud_activity_main_market.xml",
+        "source": "C:\\Users\\yushi\\.android\\build-cache\\9a7f693611312ad9096012c8a79ac4f58395e580\\output\\res\\layout\\dcloud_activity_main_market.xml"
+    },
+    {
+        "merged": "G:\\Android\\HBuilder-Integrate-AS\\app\\build\\intermediates\\res\\merged\\debug\\layout\\side_bar_layout.xml",
+        "source": "C:\\Users\\yushi\\.android\\build-cache\\9a7f693611312ad9096012c8a79ac4f58395e580\\output\\res\\layout\\side_bar_layout.xml"
+    },
+    {
+        "merged": "G:\\Android\\HBuilder-Integrate-AS\\app\\build\\intermediates\\res\\merged\\debug\\layout\\dcloud_custom_alert_dialog_layout.xml",
+        "source": "C:\\Users\\yushi\\.android\\build-cache\\9a7f693611312ad9096012c8a79ac4f58395e580\\output\\res\\layout\\dcloud_custom_alert_dialog_layout.xml"
+    },
+    {
+        "merged": "G:\\Android\\HBuilder-Integrate-AS\\app\\build\\intermediates\\res\\merged\\debug\\layout\\ad_dcloud_main.xml",
+        "source": "C:\\Users\\yushi\\.android\\build-cache\\9a7f693611312ad9096012c8a79ac4f58395e580\\output\\res\\layout\\ad_dcloud_main.xml"
+    },
+    {
+        "merged": "G:\\Android\\HBuilder-Integrate-AS\\app\\build\\intermediates\\res\\merged\\debug\\layout\\dcloud_record_address.xml",
+        "source": "C:\\Users\\yushi\\.android\\build-cache\\9a7f693611312ad9096012c8a79ac4f58395e580\\output\\res\\layout\\dcloud_record_address.xml"
+    },
+    {
+        "merged": "G:\\Android\\HBuilder-Integrate-AS\\app\\build\\intermediates\\res\\merged\\debug\\layout\\dcloud_shortcut_permission_guide_layout.xml",
+        "source": "C:\\Users\\yushi\\.android\\build-cache\\9a7f693611312ad9096012c8a79ac4f58395e580\\output\\res\\layout\\dcloud_shortcut_permission_guide_layout.xml"
+    },
+    {
+        "merged": "G:\\Android\\HBuilder-Integrate-AS\\app\\build\\intermediates\\res\\merged\\debug\\layout\\dcloud_market_fragment_base.xml",
+        "source": "C:\\Users\\yushi\\.android\\build-cache\\9a7f693611312ad9096012c8a79ac4f58395e580\\output\\res\\layout\\dcloud_market_fragment_base.xml"
+    },
+    {
+        "merged": "G:\\Android\\HBuilder-Integrate-AS\\app\\build\\intermediates\\res\\merged\\debug\\layout\\dcloud_streamapp_custom_dialog_layout.xml",
+        "source": "C:\\Users\\yushi\\.android\\build-cache\\9a7f693611312ad9096012c8a79ac4f58395e580\\output\\res\\layout\\dcloud_streamapp_custom_dialog_layout.xml"
+    },
+    {
+        "merged": "G:\\Android\\HBuilder-Integrate-AS\\app\\build\\intermediates\\res\\merged\\debug\\layout\\dcloud_image_pick_gallery.xml",
+        "source": "C:\\Users\\yushi\\.android\\build-cache\\9a7f693611312ad9096012c8a79ac4f58395e580\\output\\res\\layout\\dcloud_image_pick_gallery.xml"
+    },
+    {
+        "merged": "G:\\Android\\HBuilder-Integrate-AS\\app\\build\\intermediates\\res\\merged\\debug\\layout\\dcloud_loadingview.xml",
+        "source": "C:\\Users\\yushi\\.android\\build-cache\\9a7f693611312ad9096012c8a79ac4f58395e580\\output\\res\\layout\\dcloud_loadingview.xml"
+    },
+    {
+        "merged": "G:\\Android\\HBuilder-Integrate-AS\\app\\build\\intermediates\\res\\merged\\debug\\layout\\webview_layout.xml",
+        "source": "C:\\Users\\yushi\\.android\\build-cache\\9a7f693611312ad9096012c8a79ac4f58395e580\\output\\res\\layout\\webview_layout.xml"
+    },
+    {
+        "merged": "G:\\Android\\HBuilder-Integrate-AS\\app\\build\\intermediates\\res\\merged\\debug\\layout\\dcloud_main_test_activity.xml",
+        "source": "C:\\Users\\yushi\\.android\\build-cache\\9a7f693611312ad9096012c8a79ac4f58395e580\\output\\res\\layout\\dcloud_main_test_activity.xml"
+    },
+    {
+        "merged": "G:\\Android\\HBuilder-Integrate-AS\\app\\build\\intermediates\\res\\merged\\debug\\layout\\dcloud_custom_notification_transparent.xml",
+        "source": "C:\\Users\\yushi\\.android\\build-cache\\9a7f693611312ad9096012c8a79ac4f58395e580\\output\\res\\layout\\dcloud_custom_notification_transparent.xml"
+    },
+    {
+        "merged": "G:\\Android\\HBuilder-Integrate-AS\\app\\build\\intermediates\\res\\merged\\debug\\layout\\dcloud_image_pick_gallery_item.xml",
+        "source": "C:\\Users\\yushi\\.android\\build-cache\\9a7f693611312ad9096012c8a79ac4f58395e580\\output\\res\\layout\\dcloud_image_pick_gallery_item.xml"
+    },
+    {
+        "merged": "G:\\Android\\HBuilder-Integrate-AS\\app\\build\\intermediates\\res\\merged\\debug\\layout\\dcloud_snow_white_progress.xml",
+        "source": "C:\\Users\\yushi\\.android\\build-cache\\9a7f693611312ad9096012c8a79ac4f58395e580\\output\\res\\layout\\dcloud_snow_white_progress.xml"
+    },
+    {
+        "merged": "G:\\Android\\HBuilder-Integrate-AS\\app\\build\\intermediates\\res\\merged\\debug\\layout\\ad_dcloud_splash.xml",
+        "source": "C:\\Users\\yushi\\.android\\build-cache\\9a7f693611312ad9096012c8a79ac4f58395e580\\output\\res\\layout\\ad_dcloud_splash.xml"
+    }
+]

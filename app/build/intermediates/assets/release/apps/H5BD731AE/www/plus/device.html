@@ -1,0 +1,117 @@
+<!doctype html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+		<link href="../css/mui.min.css" rel="stylesheet" />
+	</head>
+
+	<body>
+		<script src="../js/mui.min.js"></script>
+		<script type="text/javascript">
+			mui.init();
+			mui.plusReady(function(){
+				
+				var li= document.getElementById('getDeviceInfo').getElementsByTagName('li');
+				li[0].innerHTML="设备型号：" + plus.device.model;
+				li[1].innerHTML="设备厂商：" + plus.device.vendor;
+				li[2].innerHTML="IMEI：" + plus.device.imei;
+				li[3].innerHTML="UUID: " + plus.device.uuid;
+				li[4].innerHTML="屏幕分辨率：" + plus.screen.resolutionWidth*plus.screen.scale + " x " + plus.screen.resolutionHeight*plus.screen.scale
+				li[5].innerHTML="DPI：" + plus.screen.dpiX + " x " + plus.screen.dpiY;
+				
+				var lii=document.getElementById('getSysInfo').getElementsByTagName('li');
+				lii[0].innerHTML="名称：" + plus.os.name;
+				lii[1].innerHTML="版本：" + plus.os.version;
+				lii[2].innerHTML="语言：" + plus.os.language;
+				lii[3].innerHTML= "厂商：" + plus.os.vendor;
+				
+				var types = {};
+			    types[plus.networkinfo.CONNECTION_UNKNOW] = "未知";
+			    types[plus.networkinfo.CONNECTION_NONE] = "未连接网络";
+			    types[plus.networkinfo.CONNECTION_ETHERNET] = "有线网络";
+			    types[plus.networkinfo.CONNECTION_WIFI] = "WiFi网络";
+			    types[plus.networkinfo.CONNECTION_CELL2G] = "2G蜂窝网络";
+			    types[plus.networkinfo.CONNECTION_CELL3G] = "3G蜂窝网络";
+			    types[plus.networkinfo.CONNECTION_CELL4G] = "4G蜂窝网络";
+			    lii[4].innerHTML="网络类型：" + types[plus.networkinfo.getCurrentType()];
+			});
+			function deviceBeep() {
+			    switch ( plus.os.name ) {
+			    	case "iOS":
+					    if ( plus.device.model.indexOf("iPhone") >= 0 ) {
+			                plus.device.beep();
+					        mui.toast("设备蜂鸣中...");
+					    } else {
+					        mui.toast("此设备不支持蜂鸣");
+					    }
+			    	break;
+			    	default:
+			    		plus.device.beep();
+			    		mui.toast("设备蜂鸣中...");
+			    	break;
+			    }
+			}
+			function deviceVibrate() {
+			    switch ( plus.os.name ) {
+			    	case "iOS":
+			            if ( plus.device.model.indexOf("iPhone") >= 0 ) {
+			                plus.device.vibrate();
+			                mui.toast("设备振动中...");
+			            } else {
+			                mui.toast("此设备不支持振动");
+			            }
+			    	break;
+			    	default:
+			    		plus.device.vibrate();
+			            mui.toast("设备振动中...");
+			    	break;
+			    }
+			}
+			function dial(){
+				plus.device.dial("10086",false);
+			}
+		</script>
+		<header class="mui-bar mui-bar-nav">
+		    <a class="mui-action-back mui-icon mui-icon-left-nav mui-pull-left"></a>
+		    <h1 class="mui-title">设备信息</h1>
+		</header>
+		<div class="mui-content">
+		    <div >
+		    	<ul class="mui-table-view">
+		    		<li class="mui-table-view-cell">
+		    			<a href="#getDeviceInfo" id="openPopover">获取设备信息</a>
+		    		</li>
+		    		<li class="mui-table-view-cell">
+		    			<a href="#getSysInfo" id="openPopover1">获取系统信息</a>
+		    		</li>
+		    		<li class="mui-table-view-cell" onclick="deviceBeep();">蜂鸣</li>
+		    		<li class="mui-table-view-cell" onclick="deviceVibrate()">震动</li>
+		    		<li class="mui-table-view-cell" onclick="dial()">直接拨打电话</li>
+		    	</ul>
+		    </div>
+		</div>
+		<div id="getDeviceInfo" class="mui-popover">
+		    <ul class="mui-table-view">
+			    <li class="mui-table-view-cell">1</li>
+			    <li class="mui-table-view-cell">2</li>
+			    <li class="mui-table-view-cell">3</li>
+			    <li class="mui-table-view-cell">4</li>
+			    <li class="mui-table-view-cell">5</li>
+			    <li class="mui-table-view-cell">6</li>
+		    </ul>
+		</div>
+		<div id="getSysInfo" class="mui-popover">
+		    <ul class="mui-table-view">
+			    <li class="mui-table-view-cell">1</li>
+			    <li class="mui-table-view-cell">2</li>
+			    <li class="mui-table-view-cell">3</li>
+			    <li class="mui-table-view-cell">4</li>
+			    <li class="mui-table-view-cell">5</li>
+		    </ul>
+		</div>
+	</body>
+
+</html>

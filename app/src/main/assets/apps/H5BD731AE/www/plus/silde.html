@@ -1,0 +1,55 @@
+<!doctype html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+		<link href="../css/mui.min.css" rel="stylesheet" />
+	</head>
+
+	<body>
+		<script src="../js/mui.min.js"></script>
+		<script type="text/javascript">
+			mui.init()
+		</script>
+		<header class="mui-bar mui-bar-nav">
+			<a class="mui-action-back mui-icon mui-icon-left-nav mui-pull-left"></a>
+			<h1 class="mui-title">轮播组件</h1>
+		</header>
+		<div class="mui-content">
+			<div class="mui-slider">
+				<div class="mui-slider-group mui-slider-loop">
+					<!--循环轮播-->
+					<div class="mui-slider-item mui-slider-item-duplicate">
+						<a href=""><img src="../images/4.jpg"/></a>
+					</div>
+					<div class="mui-slider-item"><a href=""><img src="../images/1.jpg"/></a></div>
+					<div class="mui-slider-item"><a href=""><img src="../images/2.jpg"/></a></div>
+					<div class="mui-slider-item"><a href=""><img src="../images/3.jpg"/></a></div>
+					<div class="mui-slider-item"><a href=""><img src="../images/4.jpg"/></a></div>
+					<div class="mui-slider-item mui-slider-item-duplicate">
+						<a href=""><img src="../images/1.jpg"/></a>
+					</div>
+				</div>
+				<!--添加小圆点-->
+				<div class="mui-slider-indicator">
+					<div class="mui-indicator mui-active"></div>
+					<div class="mui-indicator"></div>
+				</div>
+			</div>
+		</div>
+	</body>
+
+</html>
+<script type="text/javascript">
+	mui.plusReady(function(){
+		var gallery=mui('.mui-slider');
+		gallery.slider({
+			interval:3000
+		});
+	});
+	document.querySelector('.mui-slider').addEventListener('slide',function(event){
+		mui.toast('滑动到第'+(event.detail.slideNumber+1)+'张了');
+	});
+</script>

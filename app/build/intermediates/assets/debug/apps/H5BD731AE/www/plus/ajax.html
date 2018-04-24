@@ -1,0 +1,108 @@
+<!doctype html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+		<link href="../css/mui.min.css" rel="stylesheet" />
+	</head>
+
+	<body>
+		<script src="../js/mui.min.js"></script>
+		<script type="text/javascript">
+			mui.init();
+			mui.plusReady(function(){
+				document.getElementById('btn1').addEventListener('tap',function(){
+					mui.ajax({
+						url:'http://47.95.218.48/MUI',
+						type:'GET',
+						dataType:'json',
+						success:function(data){
+							mui('#result')[0].value=data.msg;
+							mui('#method')[0].value=data.method;
+							mui('#url')[0].value=data.url;
+						},
+						error:function(xhr,type,errorThrown){
+							mui.toast(type);
+						}
+					});
+				});
+				
+				document.getElementById('btn2').addEventListener('tap',function(){
+					mui.ajax({
+						url:'http://47.95.218.48/MUI',
+						type:'POST',
+						data:{test:'123'},
+						success:function(data){
+							mui('#result')[0].value=data.msg;
+							mui('#method')[0].value=data.method;
+							mui('#url')[0].value=data.url;
+						},
+						error:function(xhr,type,errorThrown){
+							console.log(errorThrown);
+						}
+					});
+				});
+				document.getElementById('btn3').addEventListener('tap',function(){
+					mui.ajax({
+						url:'http://47.95.218.48/MUI/3',
+						type:'PUT',
+						success:function(data){
+							mui('#result')[0].value=data.msg;
+							mui('#method')[0].value=data.method;
+							mui('#url')[0].value=data.url;
+						},
+						error:function(xhr,type,errorThrown){
+							console.log(errorThrown);
+						}
+					});
+				});
+				document.getElementById('btn4').addEventListener('tap',function(){
+					mui.ajax({
+						url:'http://47.95.218.48/MUI/3',
+						type:'DELETE',
+						success:function(data){
+							mui('#result')[0].value=data.msg;
+							mui('#method')[0].value=data.method;
+							mui('#url')[0].value=data.url;
+						},
+						error:function(xhr,type,errorThrown){
+							console.log(errorThrown);
+						}
+					});
+				});
+			});
+		</script>
+		<header class="mui-bar mui-bar-nav">
+		    <a class="mui-action-back mui-icon mui-icon-left-nav mui-pull-left"></a>
+		    <h1 class="mui-title">app与服务器交互</h1>
+		</header>
+		<div class="mui-content">
+		    <div  class="mui-input-group">
+		    	<div class="mui-button-row">
+		    		<button class="mui-btn mui-btn-success" id='btn1'>GET请求</button>
+		    		<button class="mui-btn mui-btn-warning" id='btn2'>POST请求</button>
+		    		
+		    	</div>
+		    	<div class="mui-input-row">
+		    		<label for="">请求方式</label>
+		    		<input type="text" name="method" id="method"/>
+		    	</div>
+		    	<div class="mui-input-row">
+		    		<label for="">请求URL</label>
+		    		<input type="text" name="url" id="url"/>
+		    	</div>
+		    	<div class="mui-input-row">
+		    		<label for="">请求结果</label>
+		    	    <input type="text" name="result" id="result" value="" />
+		    	</div>
+		    	<div class="mui-button-row">
+		    		<button class="mui-btn mui-btn-primary" id='btn3'>PUT请求</button>
+		    		<button class="mui-btn mui-btn-danger" id='btn4'>DETETE请求</button>
+		    	</div>
+		    </div>
+		</div>
+	</body>
+
+</html>

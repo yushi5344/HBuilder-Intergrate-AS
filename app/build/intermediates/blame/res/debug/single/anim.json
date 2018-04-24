@@ -1,0 +1,30 @@
+[
+    {
+        "merged": "G:\\Android\\HBuilder-Integrate-AS\\app\\build\\intermediates\\res\\merged\\debug\\anim\\dcloud_slide_in_from_top.xml",
+        "source": "C:\\Users\\yushi\\.android\\build-cache\\9a7f693611312ad9096012c8a79ac4f58395e580\\output\\res\\anim\\dcloud_slide_in_from_top.xml"
+    },
+    {
+        "merged": "G:\\Android\\HBuilder-Integrate-AS\\app\\build\\intermediates\\res\\merged\\debug\\anim\\dcloud_slide_right_in.xml",
+        "source": "C:\\Users\\yushi\\.android\\build-cache\\9a7f693611312ad9096012c8a79ac4f58395e580\\output\\res\\anim\\dcloud_slide_right_in.xml"
+    },
+    {
+        "merged": "G:\\Android\\HBuilder-Integrate-AS\\app\\build\\intermediates\\res\\merged\\debug\\anim\\dcloud_slide_out_to_right.xml",
+        "source": "C:\\Users\\yushi\\.android\\build-cache\\9a7f693611312ad9096012c8a79ac4f58395e580\\output\\res\\anim\\dcloud_slide_out_to_right.xml"
+    },
+    {
+        "merged": "G:\\Android\\HBuilder-Integrate-AS\\app\\build\\intermediates\\res\\merged\\debug\\anim\\dcloud_slide_right_out.xml",
+        "source": "C:\\Users\\yushi\\.android\\build-cache\\9a7f693611312ad9096012c8a79ac4f58395e580\\output\\res\\anim\\dcloud_slide_right_out.xml"
+    },
+    {
+        "merged": "G:\\Android\\HBuilder-Integrate-AS\\app\\build\\intermediates\\res\\merged\\debug\\anim\\dcloud_slide_out_to_top.xml",
+        "source": "C:\\Users\\yushi\\.android\\build-cache\\9a7f693611312ad9096012c8a79ac4f58395e580\\output\\res\\anim\\dcloud_slide_out_to_top.xml"
+    },
+    {
+        "merged": "G:\\Android\\HBuilder-Integrate-AS\\app\\build\\intermediates\\res\\merged\\debug\\anim\\dcloud_slide_static.xml",
+        "source": "C:\\Users\\yushi\\.android\\build-cache\\9a7f693611312ad9096012c8a79ac4f58395e580\\output\\res\\anim\\dcloud_slide_static.xml"
+    },
+    {
+        "merged": "G:\\Android\\HBuilder-Integrate-AS\\app\\build\\intermediates\\res\\merged\\debug\\anim\\dcloud_slide_in_from_right.xml",
+        "source": "C:\\Users\\yushi\\.android\\build-cache\\9a7f693611312ad9096012c8a79ac4f58395e580\\output\\res\\anim\\dcloud_slide_in_from_right.xml"
+    }
+]
