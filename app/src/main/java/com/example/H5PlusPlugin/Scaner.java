@@ -34,6 +34,7 @@ public class Scaner extends StandardFeature
     public static final String SCANNER_IDLE = "SCANNER_IDLE";
 
 
+    public Context mcontent;
     public int mScanerNumber = 0;
     public int mScanerTimeStep;
     private BarcodeManager mBarcodeManager;
@@ -49,6 +50,10 @@ public class Scaner extends StandardFeature
 
     public void PluginTestFunction(IWebview    pWebview, JSONArray array)
     {
+
+        mBarcodeConfig = new BarcodeConfig(mcontent);
+
+        boolean isAim = mBarcodeConfig.isDecodeAimIlluminiation();
     	// 原生代码中获取JS层传递的参数，
     	// 参数的获取顺序与JS层传递的顺序一致
         String CallBackID = array.optString(0);

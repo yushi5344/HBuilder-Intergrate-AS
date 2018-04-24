@@ -12,7 +12,7 @@
     <dimen name="dcloud_wel_base_content_space">30dp</dimen>
     <dimen name="dcloud_wel_base_content_space_2">60dp</dimen>
     <dimen name="dcloud_wel_base_content_text_min_size">15sp</dimen>
-    <string name="app_name">HBuilder-Integrate-AS</string>
+    <string name="app_name">东晖</string>
     <string name="dcloud_gallery_app_name">@string/app_name</string>
     <string name="stream_my">Recent StreamApp</string>
     <style name="ActionSheetStyleIOS6">
@@ -49,7 +49,7 @@
     <style name="DCloudTheme" parent="@style/DeviceDefault.Light">
          <item name="android:windowFullscreen">true</item>
          <item name="android:colorEdgeEffect">#333333</item>
-         <!--<item name="android:windowIsTranslucent">true</item>-->
+         
      </style>
     <style name="DeviceDefault" parent="@android:style/Theme.DeviceDefault">
          <item name="android:windowNoTitle">true</item>

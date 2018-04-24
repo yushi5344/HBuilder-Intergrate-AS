@@ -97,47 +97,17 @@
     <orderEntry type="jdk" jdkName="Android API 26 Platform" jdkType="Android SDK" />
     <orderEntry type="sourceFolder" forTests="false" />
     <orderEntry type="library" exported="" name="com.android.support:multidex-1.0.1" level="project" />
-    <orderEntry type="library" exported="" name="__local_jars__:G.\Android\HBuilder-Integrate-AS\app\libs\speech.jar:unspecified@jar" level="project" />
-    <orderEntry type="library" exported="" name="__local_jars__:G.\Android\HBuilder-Integrate-AS\app\libs\tx_weibo_sdk-httpclient-3.0.1.jar:unspecified@jar" level="project" />
-    <orderEntry type="library" exported="" name="__local_jars__:G.\Android\HBuilder-Integrate-AS\app\libs\tx_weibo_sdk_component.jar:unspecified@jar" level="project" />
-    <orderEntry type="library" exported="" name="__local_jars__:G.\Android\HBuilder-Integrate-AS\app\libs\qq_sdk_v3.1.0.jar:unspecified@jar" level="project" />
-    <orderEntry type="library" exported="" name="__local_jars__:G.\Android\HBuilder-Integrate-AS\app\libs\share-sina.jar:unspecified@jar" level="project" />
-    <orderEntry type="library" exported="" scope="TEST" name="com.android.support:multidex-instrumentation-1.0.1" level="project" />
-    <orderEntry type="library" exported="" name="__local_jars__:G.\Android\HBuilder-Integrate-AS\app\libs\share-qq.jar:unspecified@jar" level="project" />
-    <orderEntry type="library" exported="" name="__local_jars__:G.\Android\HBuilder-Integrate-AS\app\libs\MiPush_SDK_Client_3_1_2.jar:unspecified@jar" level="project" />
-    <orderEntry type="library" exported="" name="__local_jars__:G.\Android\HBuilder-Integrate-AS\app\libs\AMap_Services_V2.4.0.jar:unspecified@jar" level="project" />
-    <orderEntry type="library" exported="" name="__local_jars__:G.\Android\HBuilder-Integrate-AS\app\libs\aps-xiaomi.jar:unspecified@jar" level="project" />
-    <orderEntry type="library" exported="" name="__local_jars__:G.\Android\HBuilder-Integrate-AS\app\libs\oauth-qq.jar:unspecified@jar" level="project" />
-    <orderEntry type="library" exported="" name="__local_jars__:G.\Android\HBuilder-Integrate-AS\app\libs\xiaomi-oauth.1.6.6.jar:unspecified@jar" level="project" />
-    <orderEntry type="library" exported="" name="__local_jars__:G.\Android\HBuilder-Integrate-AS\app\libs\Msc.jar:unspecified@jar" level="project" />
-    <orderEntry type="library" exported="" name="__local_jars__:G.\Android\HBuilder-Integrate-AS\app\libs\geolocation-amap.jar:unspecified@jar" level="project" />
-    <orderEntry type="library" exported="" name="__local_jars__:G.\Android\HBuilder-Integrate-AS\app\libs\share-tencent.jar:unspecified@jar" level="project" />
-    <orderEntry type="library" exported="" name="__local_jars__:G.\Android\HBuilder-Integrate-AS\app\libs\tx_wx.jar:unspecified@jar" level="project" />
-    <orderEntry type="library" exported="" name="__local_jars__:G.\Android\HBuilder-Integrate-AS\app\libs\tx_weibo_sdk.jar:unspecified@jar" level="project" />
-    <orderEntry type="library" exported="" name="__local_jars__:G.\Android\HBuilder-Integrate-AS\app\libs\aps-igexin.jar:unspecified@jar" level="project" />
-    <orderEntry type="library" exported="" name="__local_jars__:G.\Android\HBuilder-Integrate-AS\app\libs\alipayutdid.jar:unspecified@jar" level="project" />
-    <orderEntry type="library" exported="" name="__local_jars__:G.\Android\HBuilder-Integrate-AS\app\libs\statistics-umeng.jar:unspecified@jar" level="project" />
-    <orderEntry type="library" exported="" name="__local_jars__:G.\Android\HBuilder-Integrate-AS\app\libs\AMap_3DMap_V2.4.1.jar:unspecified@jar" level="project" />
-    <orderEntry type="library" exported="" name="__local_jars__:G.\Android\HBuilder-Integrate-AS\app\libs\speech_ifly.jar:unspecified@jar" level="project" />
-    <orderEntry type="library" exported="" name="__local_jars__:G.\Android\HBuilder-Integrate-AS\app\libs\oauth-sina.jar:unspecified@jar" level="project" />
     <orderEntry type="library" exported="" name="__local_jars__:G.\Android\HBuilder-Integrate-AS\app\libs\ScanerLibrary V1.5.jar:unspecified@jar" level="project" />
-    <orderEntry type="library" exported="" name="__local_jars__:G.\Android\HBuilder-Integrate-AS\app\libs\oauth-miui.jar:unspecified@jar" level="project" />
     <orderEntry type="library" exported="" name="__local_jars__:G.\Android\HBuilder-Integrate-AS\app\libs\aps-dhPush.jar:unspecified@jar" level="project" />
     <orderEntry type="library" exported="" name="__local_jars__:G.\Android\HBuilder-Integrate-AS\app\libs\GetuiSDK2.10.3.5.jar:unspecified@jar" level="project" />
     <orderEntry type="library" exported="" name="__local_jars__:G.\Android\HBuilder-Integrate-AS\app\libs\messaging.jar:unspecified@jar" level="project" />
-    <orderEntry type="library" exported="" name="__local_jars__:G.\Android\HBuilder-Integrate-AS\app\libs\map-baidu.jar:unspecified@jar" level="project" />
     <orderEntry type="library" exported="" name="lib.5plus.base-release:@aar" level="project" />
-    <orderEntry type="library" exported="" name="__local_jars__:G.\Android\HBuilder-Integrate-AS\app\libs\oauth-weixin.jar:unspecified@jar" level="project" />
-    <orderEntry type="library" exported="" name="__local_jars__:G.\Android\HBuilder-Integrate-AS\app\libs\AMap_Location_V3.3.0_20170118.jar:unspecified@jar" level="project" />
-    <orderEntry type="library" exported="" name="__local_jars__:G.\Android\HBuilder-Integrate-AS\app\libs\map-amap.jar:unspecified@jar" level="project" />
-    <orderEntry type="library" exported="" name="__local_jars__:G.\Android\HBuilder-Integrate-AS\app\libs\payment-alipay.jar:unspecified@jar" level="project" />
-    <orderEntry type="library" exported="" name="__local_jars__:G.\Android\HBuilder-Integrate-AS\app\libs\sinaweibo4.1.jar:unspecified@jar" level="project" />
+    <orderEntry type="library" exported="" scope="TEST" name="com.android.support:multidex-instrumentation-1.0.1" level="project" />
     <orderEntry type="library" exported="" name="__local_jars__:G.\Android\HBuilder-Integrate-AS\app\libs\umeng-analytics-v6.0.1.jar:unspecified@jar" level="project" />
-    <orderEntry type="library" exported="" name="__local_jars__:G.\Android\HBuilder-Integrate-AS\app\libs\alipaySingle-20161222.jar:unspecified@jar" level="project" />
-    <orderEntry type="library" exported="" name="__local_jars__:G.\Android\HBuilder-Integrate-AS\app\libs\share-weixin.jar:unspecified@jar" level="project" />
-    <orderEntry type="library" exported="" name="__local_jars__:G.\Android\HBuilder-Integrate-AS\app\libs\payment-weixin.jar:unspecified@jar" level="project" />
+    <orderEntry type="library" exported="" name="__local_jars__:G.\Android\HBuilder-Integrate-AS\app\libs\Msc.jar:unspecified@jar" level="project" />
+    <orderEntry type="library" exported="" name="__local_jars__:G.\Android\HBuilder-Integrate-AS\app\libs\geolocation-amap.jar:unspecified@jar" level="project" />
     <orderEntry type="library" exported="" name="__local_jars__:G.\Android\HBuilder-Integrate-AS\app\libs\geolocation-baidu.jar:unspecified@jar" level="project" />
-    <orderEntry type="library" exported="" name="__local_jars__:G.\Android\HBuilder-Integrate-AS\app\libs\qq_mta-sdk-1.6.2.jar:unspecified@jar" level="project" />
+    <orderEntry type="library" exported="" name="__local_jars__:G.\Android\HBuilder-Integrate-AS\app\libs\aps-igexin.jar:unspecified@jar" level="project" />
     <orderEntry type="library" exported="" name="__local_jars__:G.\Android\HBuilder-Integrate-AS\app\libs\aps.jar:unspecified@jar" level="project" />
   </component>
 </module>

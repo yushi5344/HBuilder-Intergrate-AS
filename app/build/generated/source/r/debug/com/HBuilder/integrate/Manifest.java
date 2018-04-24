@@ -9,6 +9,8 @@ package com.HBuilder.integrate;
 
 public final class Manifest {
     public static final class permission {
+        /**  Barcode(扫码)  start 
+         */
         public static final String integrate="getui.permission.GetuiService.com.HBuilder.integrate";
     }
 }

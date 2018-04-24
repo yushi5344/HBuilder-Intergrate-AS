@@ -347,8 +347,6 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
     public static final class style {
         public static final int ActionSheetStyleIOS6=0x7f080000;
         public static final int ActionSheetStyleIOS7=0x7f080001;
-        /** <item name="android:windowIsTranslucent">true</item>
-         */
         public static final int DCloudTheme=0x7f080002;
         public static final int DeviceDefault=0x7f080003;
         public static final int DeviceDefault_Light=0x7f080004;

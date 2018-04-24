@@ -13,7 +13,7 @@
 -printconfiguration 'G:\Android\HBuilder-Integrate-AS\app\build\intermediates\multi-dex\release\components.flags'
 
 
-# view AndroidManifest.xml #generated:663
+# view AndroidManifest.xml #generated:265
 -keep class io.dcloud.multiprocess.activity.WebAppActivity1 {
     <init>(...);
 }
